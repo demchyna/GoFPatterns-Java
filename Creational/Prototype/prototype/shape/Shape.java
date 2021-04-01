@@ -1,4 +1,5 @@
 package prototype.shape;
+
 public abstract class Shape {
 	protected String type;
 	protected String color;
@@ -8,7 +9,7 @@ public abstract class Shape {
 		this.color = color;
 	}
 
-	public Shape(Shape target) {
+	protected Shape(Shape target) {
 		this.type = target.type;
 		this.color = target.color;
 	}

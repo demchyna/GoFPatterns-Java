@@ -4,13 +4,14 @@ import iterator.Iterator;
 
 public class IteratorPatternDemo {
 	public static void main(String[] args) {
-		Iterable names = new NameRepository();
+		Iterable names = new NameRepository(
+				new String[] { "Robert", "John", "Julie", "Lora", "Steven" });
+
 		Iterator iterator = names.getIterator();
 
 		while (iterator.hasNext()) {
 			String name = (String) iterator.next();
-			System.out.println("Name : " + name);
+			System.out.println("Hello " + name + "!");
 		}
 	}
 }
-

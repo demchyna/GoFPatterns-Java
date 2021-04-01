@@ -7,6 +7,7 @@ public class RealImage implements Image {
 	public RealImage(String fileName) {
 		this.fileName = fileName;
 	}
+
 	@Override
 	public void display() {
 		loadFromDisk(fileName);

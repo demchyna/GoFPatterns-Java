@@ -4,9 +4,9 @@ public class SingleObject {
 	
 	private static SingleObject instance = null;
 
-	private SingleObject() {}
+	private SingleObject() { }
 
-	public static SingleObject getInstance() {
+	public synchronized static SingleObject getInstance() {
 	   if (instance == null) {
 		   instance = new SingleObject();
 	   }

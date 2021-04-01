@@ -1,19 +1,18 @@
-import abstractState.Context;
-import abstractState.impl.StartState;
-import abstractState.impl.StopState;
+import abstractState.Door;
+import abstractState.impl.OpenState;
+import abstractState.impl.CloseState;
 import abstractState.State;
 
 public class StatePatternDemo {
 	public static void main(String[] args) {
-		Context context = new Context();
+		Door door = new Door();
 		
-		State startState = new StartState();
-		startState.doAction(context);
-		System.out.println(context.getState());
+		State open = new OpenState();
+		open.doAction(door);
+		System.out.println(door.getState());
 
-		State stopState = new StopState();
-		stopState.doAction(context);
-		System.out.println(context.getState());
+		State close = new CloseState();
+		close.doAction(door);
+		System.out.println(door.getState());
 	}
 }
-

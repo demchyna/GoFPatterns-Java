@@ -14,5 +14,12 @@ public class FactoryMethodPatternDemo {
         Shape square = squareFactory.createShape();
         square.draw();
 
+        doSomething(new SquareFactory());
+
     }
+
+    public static void doSomething(ShapeFactory shapeFactory) {
+        shapeFactory.createShape().draw();
+    }
+
 }

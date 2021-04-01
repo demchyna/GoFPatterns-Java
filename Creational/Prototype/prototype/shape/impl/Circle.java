@@ -9,7 +9,7 @@ public class Circle extends Shape {
 		super("circle", color);
 	}
 
-	public Circle(Circle target) {
+	private Circle(Circle target) {
 		super(target);
 		this.radius = target.radius;
 	}

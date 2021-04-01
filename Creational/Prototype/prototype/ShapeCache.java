@@ -22,5 +22,3 @@ public class ShapeCache {
 		shapeMap.put(square.getType(), square);
 	}
 }
-
-

@@ -6,14 +6,12 @@ public class Subscription {
     private List<Observer> observers;
     private Observer observer;
 
-    public Subscription(List<Observer> observers, Observer observer)
-    {
+    public Subscription(List<Observer> observers, Observer observer) {
         this.observers = observers;
         this.observer = observer;
     }
 
-    public void unsubscribe()
-    {
+    public void unsubscribe() {
         observers.remove(observer);
     }
 }

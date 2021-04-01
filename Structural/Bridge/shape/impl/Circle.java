@@ -13,7 +13,7 @@ public class Circle extends Shape {
 
 	@Override
 	public void draw() {
-		System.out.print("The circle with the ");
+		System.out.print("The circle with a ");
 		color.fill();
 	}
 }

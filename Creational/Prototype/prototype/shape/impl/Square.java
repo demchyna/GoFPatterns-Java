@@ -9,7 +9,7 @@ public class Square extends Shape {
 		super("square", color);
 	}
 
-	public Square(Square target) {
+	private Square(Square target) {
 		super(target);
 		this.side = target.side;
 	}

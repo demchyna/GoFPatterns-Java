@@ -4,7 +4,11 @@ import iterator.Iterable;
 import iterator.Iterator;
 
 public class NameRepository implements Iterable {
-	public String names[] = { "Robert", "John", "Julie", "Lora", "Steven" };
+	public String[] names;
+
+	public NameRepository(String[] names) {
+		this.names = names;
+	}
 
 	@Override
 	public Iterator getIterator() {

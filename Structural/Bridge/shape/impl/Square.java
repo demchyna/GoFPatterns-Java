@@ -13,7 +13,7 @@ public class Square extends Shape {
 
     @Override
     public void draw() {
-        System.out.print("The square with the ");
+        System.out.print("The square with a ");
         color.fill();
     }
 }

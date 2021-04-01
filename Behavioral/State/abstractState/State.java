@@ -1,6 +1,6 @@
 package abstractState;
 
 public interface State {
-	void doAction(Context context);
+	void doAction(Door door);
 }
 

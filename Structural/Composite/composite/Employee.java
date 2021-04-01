@@ -30,7 +30,7 @@ public class Employee {
 
 	public String toString() {
 		return ("Employee: [ Name: " + name + ", dept: " +
-				department + ", salary:" + salary + " ]");
+				department + ", salary: " + salary + " ]");
 	}
 }
 

@@ -1,6 +1,6 @@
 package abstractState;
 
-public class Context {
+public class Door {
 	private State state;
 
 	public void setState(State state) {

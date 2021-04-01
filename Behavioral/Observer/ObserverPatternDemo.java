@@ -8,13 +8,11 @@ public class ObserverPatternDemo {
 
         Subscription octalSubscription = observable.subscribe(new OctalObserver());
 
-        Subscription binarySubscription = observable.subscribe((number) -> {
-            System.out.println("Binary String: " + Integer.toBinaryString(number));
-        });
+        Subscription binarySubscription = observable.subscribe((number) ->
+                System.out.println("Binary String: " + Integer.toBinaryString(number)));
 
-        Subscription hexaSubscription = observable.subscribe((number) -> {
-            System.out.println("Hex String: " + Integer.toHexString(number).toUpperCase());
-        });
+        Subscription hexaSubscription = observable.subscribe((number) ->
+                System.out.println("Hex String: " + Integer.toHexString(number).toUpperCase()));
 
         observable.setState(268);
 

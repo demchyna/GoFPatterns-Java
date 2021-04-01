@@ -6,8 +6,7 @@ public class Person {
     private String phone;
     private String address;
 
-    private Person() {
-    }
+    private Person() { }
 
     public String getName() {
         return name;

@@ -17,6 +17,5 @@ public class ProxyImage implements Image {
 		} else {
 			System.out.println("Displaying " + fileName);
 		}
-
 	}
 }
